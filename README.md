@@ -2,11 +2,11 @@
 
 # Markdown Previewer 📝
 
-This simple project is a responsive web application that allows users to generate endless random quotes with the click of a button.
+This simple project is a responsive web application that allows users to write and preview markdown syntax in real-time.
 
 ## Description 💡
 
-A Quote generator React app that consumes the [Quotable API](https://github.com/lukePeavey/quotable?tab=readme-ov-file#get-random-quotes) to display random quotes.
+This project was built as part of the [freeCodeCamp](https://www.freecodecamp.org/) Front End Libraries Certification. The goal was to build a markdown previewer that meets the following user stories:
 
 <div align="center">
 
