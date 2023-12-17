@@ -10,8 +10,8 @@ This project was built as part of the [freeCodeCamp](https://www.freecodecamp.or
 
 <div align="center">
 
-[![quote](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://quote.jpdiaz.dev/)
-[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://pr.new/github.com/JuanPabloDiaz/random-quote-generator)
+[![markdownPreviewer](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://markdown.jpdiaz.dev/)
+[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://pr.new/github.com/JuanPabloDiaz/markdownPreviewer)
 
 </div>
 
@@ -25,14 +25,14 @@ This project was built as part of the [freeCodeCamp](https://www.freecodecamp.or
 
 ## Features:
 
-- Responsive design: [random quote generator](https://quote.jpdiaz.dev) adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
+- Responsive design: [markdown previewer](https://markdown.jpdiaz.dev) adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
 - Sleek and modern UI: Tailwind CSS provides a beautiful and intuitive user interface.
 - Efficient and performant: Vite.js ensures fast loading times and a smooth experience.
 - API integration.
 
 ### Built With 🔑
 
-Welcome to [random quote generator](https://quote.jpdiaz.dev), a simple random quote generator build with React, Tailwind CSS and Vite.js.
+Welcome to [markdown previewer](https://quote.jpdiaz.dev), a simple random quote generator build with React, Tailwind CSS and Vite.js.
 
 ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)
@@ -46,15 +46,15 @@ Here's a closer look at the tech stack:
 
 ## Get started 🛠️
 
-To get started with [random-quote-generator](https://quote.jpdiaz.dev), simply clone the repository and follow the setup instructions. You'll be up and running in no time!
+To get started with [markdown previewer](https://markdown.jpdiaz.dev), simply clone the repository and follow the setup instructions. You'll be up and running in no time!
 
 ## Contribution 🤝
 
-I welcome contributions to the [random quote generator](https://quote.jpdiaz.dev)! Feel free to fork the repository and submit pull requests with your improvements.
+I welcome contributions to the [markdown previewer](https://markdown.jpdiaz.dev)! Feel free to fork the repository and submit pull requests with your improvements.
 
 ## License 📜
 
-[random quote generator](https://quote.jpdiaz.dev) is licensed under the MIT License.
+[markdown previewer](https://markdown.jpdiaz.dev) is licensed under the MIT License.
 
 We hope you enjoy using Jp·Shop!
 
@@ -83,7 +83,6 @@ We hope you enjoy using Jp·Shop!
 
 Resources list that I find helpful and would like to give credit to.
 
-- [Quotable API](https://github.com/lukePeavey/quotable?tab=readme-ov-file#get-random-quotes)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vite.js](https://vitejs.dev/)
 - [React.js](https://reactjs.org/)
