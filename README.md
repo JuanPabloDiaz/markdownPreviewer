@@ -28,7 +28,6 @@ This project was built as part of the [freeCodeCamp](https://www.freecodecamp.or
 - Responsive design: [markdown previewer](https://markdown.jpdiaz.dev) adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
 - Sleek and modern UI: Tailwind CSS provides a beautiful and intuitive user interface.
 - Efficient and performant: Vite.js ensures fast loading times and a smooth experience.
-- API integration.
 
 ### Built With 🔑
 
@@ -41,8 +40,20 @@ Welcome to [markdown previewer](https://quote.jpdiaz.dev), a simple random quote
 Here's a closer look at the tech stack:
 
 - Front-End: React.js, Vite.js, Tailwind CSS
-- Back-End: API Integration (RESTful)
+- API: [Marked](https://www.npmjs.com/package/marked)
 - Deployment: Vercel
+
+## Dependencies:
+
+For this project you need to install the Marked package. You can install it using npm or yarn.
+
+Markdown previewer uses the Marked package to parse markdown syntax into HTML.
+
+### Marked CLI Installation
+
+```bash
+npm install -g marked
+```
 
 ## Get started 🛠️
 
@@ -83,6 +94,8 @@ We hope you enjoy using Jp·Shop!
 
 Resources list that I find helpful and would like to give credit to.
 
+- [Marked Documentation](https://marked.js.org/)
+- [npm Marked](https://www.npmjs.com/package/marked)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vite.js](https://vitejs.dev/)
 - [React.js](https://reactjs.org/)
