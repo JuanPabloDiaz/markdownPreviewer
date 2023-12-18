@@ -14,11 +14,11 @@ function App() {
 
   return (
     <>
-      <div className="w-screen h-screen flex flex-col justify-center items-center ">
+      <div className="w-screen h-screen flex justify-center items-center">
         <h1 className="fixed top-5 text-3xl font-bold">Markdown Previewer</h1>
-        <div className="flex gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black p-2">
-          <div className="flex flex-col justify-start items-start w-full p-1">
-            <h1 className="text-3xl">Editor</h1>
+        <div className="flex flex-col md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black p-2">
+          <div className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1">
+            <h1 className="text-md md:text-2xl">Editor</h1>
             <textarea
               id="editor"
               className="w-full h-full border-2 border-black rounded-lg p-1"
@@ -29,13 +29,21 @@ function App() {
           </div>
           <div
             id="preview"
-            className="flex flex-col justify-start items-start w-full p-1"
+            className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1"
           >
-            <h1 className="text-3xl">Previewer</h1>
+            <h1 className="text-md md:text-2xl">Previewer</h1>
             <div className="w-full h-full border-2 border-black rounded-lg p-1">
               {markdown}
             </div>
           </div>
+        </div>
+        <div className="flex justify-end fixed sm:bottom-6 bottom-2 w-5/6 gap-2">
+          <p className="text-sm sm:text-md md:text-lg font-normal text-[#5f5f5f]">
+            Developed by:
+          </p>
+          <span className="text-sm sm:text-md md:text-lg font-normal text-[#999999] hover:text-[#F8F9FA] transition duration-300">
+            <a href="https://jpdiaz.dev/">Juan Diaz</a>
+          </span>
         </div>
       </div>
     </>
