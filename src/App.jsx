@@ -32,10 +32,10 @@ function App() {
           </div>
           <div
             id="preview"
-            className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1"
+            className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1 overflow-auto"
           >
             <h1 className="text-md md:text-2xl">Previewer</h1>
-            <div className="w-full h-full border-2 border-black rounded-lg p-1">
+            <div className="w-full h-full p-1">
               <div
                 className="p-2"
                 dangerouslySetInnerHTML={{ __html: marked(markdown) }} // Converts markdown to HTML
