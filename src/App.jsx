@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { marked } from "marked"; // Markdown parser library
 import "./App.css";
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
       document.body.style.overflow = "unset";
     };
   }, []);
+
+  // To test the markdown parser, try this: https://markdown-it.github.io/
 
   return (
     <>
@@ -33,7 +36,10 @@ function App() {
           >
             <h1 className="text-md md:text-2xl">Previewer</h1>
             <div className="w-full h-full border-2 border-black rounded-lg p-1">
-              {markdown}
+              <div
+                className="p-2"
+                dangerouslySetInnerHTML={{ __html: marked(markdown) }} // Converts markdown to HTML
+              ></div>
             </div>
           </div>
         </div>

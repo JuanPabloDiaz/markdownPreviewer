@@ -52,7 +52,7 @@ Markdown previewer uses the Marked package to parse markdown syntax into HTML.
 ### Marked CLI Installation
 
 ```bash
-npm install -g marked
+npm install marked
 ```
 
 ## Get started 🛠️
