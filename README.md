@@ -96,6 +96,7 @@ Resources list that I find helpful and would like to give credit to.
 
 - [Marked Documentation](https://marked.js.org/)
 - [npm Marked](https://www.npmjs.com/package/marked)
+- [How to Build a Markdown Previewer with React.js](https://www.freecodecamp.org/news/build-a-markdown-previewer-with-react-js/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vite.js](https://vitejs.dev/)
 - [React.js](https://reactjs.org/)
