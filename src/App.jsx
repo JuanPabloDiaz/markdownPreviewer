@@ -24,7 +24,7 @@ function App() {
             <h1 className="text-md md:text-2xl">Editor</h1>
             <textarea
               id="editor"
-              className="w-full h-full border-2 border-black rounded-lg p-1"
+              className="w-full h-full border-2 border-black rounded-lg p-1 custom-scrollbar"
               placeholder="Enter markdown here"
               onChange={(e) => setMarkdown(e.target.value)}
               value={markdown}
@@ -32,7 +32,7 @@ function App() {
           </div>
           <div
             id="preview"
-            className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1 overflow-auto"
+            className="custom-scrollbar flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1 overflow-auto"
           >
             <h1 className="text-md md:text-2xl">Previewer</h1>
             <div className="w-full h-full p-1">
