@@ -16,7 +16,7 @@ function App() {
     <>
       <div className="w-screen h-screen flex justify-center items-center">
         <h1 className="fixed top-5 text-3xl font-bold">Markdown Previewer</h1>
-        <div className="flex flex-col md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black p-2">
+        <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black p-2">
           <div className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1">
             <h1 className="text-md md:text-2xl">Editor</h1>
             <textarea
