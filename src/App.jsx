@@ -1,63 +1,45 @@
 import { useState, useEffect } from "react";
-import { marked } from "marked"; // Markdown parser library
 import "./App.css";
 import Footer from "./Components/Footer.jsx";
 
-// Enable GitHub flavored markdown (GFM)
-marked.setOptions({
-  gfm: true,
-  breaks: true,
-});
+import MarkdownPreview from "@uiw/react-markdown-preview"; // Markdown previewer library
 
 // Default markdown: https://www.markdownguide.org/basic-syntax/
-const defaultMarkdown = `# React Markdown Previewer
+const defaultMarkdown = `<br>
 
-## Type your Markdown in the Editor!
-<br><br>
+Type your Markdown in the Editor!
+<br>
 
+### Hi there 👋 I'm [Juan](https://github.com/JuanPabloDiaz), a Passionate Front End Developer💻
 
-# h1 Heading 8-)
+\`\`\`javascript
+const JuanDiaz = {
+  Root: "Bogota" | "Colombia",
+  code: [Javascript, React, Astro, Vue, HTML, CSS Tailwind, Python, Java, C#],
+  tools: [VS-Code, Copilot],
+  architecture: ["microservices", "event-driven", "design system pattern"],
+  techCommunities: {
+    Web: Platzi, FreeCodeCamp.
+  },
+  #NeverStopLearning : true,
+  @1diazDev: {
+    Twitter: https://twitter.com/1diazdev,
+    LinkedIn: https://www.linkedin.com/in/1diazdev/,
+    GitHub: https://github.com/JuanPabloDiaz
+  },
+};
+\`\`\`
+
+***
+
+# h1 Heading
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
 ##### h5 Heading
 ###### h6 Heading
 
-
-## Horizontal Rules
-
-___
-
----
-
-***
-
-
-## Typographic replacements
-
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
-
-## Emphasis
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
+**bold text**, *italic text*, ~~Strikethrough~~
 
 ## Blockquotes
 
@@ -114,85 +96,33 @@ Block code "fences"
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
 ## Links
 
-[link text](http://dev.nodeca.com)
+[Juan Diaz's Github link](https://github.com/JuanPabloDiaz)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
+[Linkedin](https://www.linkedin.com/in/1diazdev/)
 
 ## Images
 
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+[![](https://img.shields.io/badge/@1diazdev-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/1diazdev/)
+[![](https://img.shields.io/badge/@1diazdev-1D9BF0.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.twitter.com/1diazdev)
+[![](https://img.shields.io/badge/Email-fff?style=for-the-badge&logo=Mail.Ru&logoColor=06B6D4)](mailto:juan.diaz93@hotmail.com)
 
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-## Plugins
-
-The killer feature of is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :cry: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
-
+<a href="https://github.com/JuanPabloDiaz?tab=repositories">
+<img src="https://avatars.githubusercontent.com/u/25883220?v=4"  width="200px" alt="Logo">
+</a>
 
 ### [<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
 
 ### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
 Footnote 1 link[^first].
 
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
 Duplicated footnote reference[^second].
 
 [^first]: Footnote **can have markup**
 
-    and multiple paragraphs.
-
 [^second]: Footnote text.
-
 
 ### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
 
@@ -251,11 +181,11 @@ function App() {
       <div className="w-screen h-screen flex justify-center items-center">
         <h1 className="fixed top-5 text-3xl font-bold">Markdown Previewer</h1>
         <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black p-2">
-          <div className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1">
+          <div className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-2/5 p-1 m-2 border-2 border-black rounded-lg shadow shadow-violet-950 shadow-lg">
             <h1 className="text-md md:text-2xl">Editor</h1>
             <textarea
               id="editor"
-              className="w-full h-full border-2 border-black rounded-lg p-1 custom-scrollbar"
+              className="w-full h-full border-t-2 p-1 custom-scrollbar"
               placeholder="Enter markdown here"
               onChange={(e) => setMarkdown(e.target.value)}
               value={markdown}
@@ -263,13 +193,18 @@ function App() {
           </div>
           <div
             id="preview"
-            className="custom-scrollbar flex flex-col justify-start items-start h-96 md:h-auto sm:w-full p-1 overflow-auto"
+            className="custom-scrollbar flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-3/5 p-1 overflow-auto"
           >
-            <h1 className="text-md md:text-2xl">Previewer</h1>
+            <h1 className="fixed flex justify-start items-end top-20 text-md md:text-2xl bg-white w-full h-10">
+              Previewer
+            </h1>
             <div className="w-full h-full p-1">
-              <div
-                dangerouslySetInnerHTML={{ __html: marked(markdown) }} // Converts markdown to HTML
-              ></div>
+              <MarkdownPreview
+                source={markdown}
+                wrapperElement={{
+                  "data-color-mode": "light",
+                }}
+              />
             </div>
           </div>
         </div>
