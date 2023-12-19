@@ -74,19 +74,15 @@ Start numbering with offset:
 57. foo
 1. bar
 
-
 ## Code
-
-
-Indented code
 
     // Some comments
     line 1 of code
     line 2 of code
-    line 3 of code
 
-
-Block code "fences"
+\`\`\`bash
+npm i @uiw/react-markdown-preview
+\`\`\`
 
 ## Tables
 
@@ -98,9 +94,9 @@ Block code "fences"
 
 ## Links
 
-[Juan Diaz's Github link](https://github.com/JuanPabloDiaz)
+[Juan's Github](https://github.com/JuanPabloDiaz)
 
-[Linkedin](https://www.linkedin.com/in/1diazdev/)
+[Juan's Linkedin](https://www.linkedin.com/in/1diazdev/)
 
 ## Images
 
