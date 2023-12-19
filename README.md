@@ -40,16 +40,24 @@ Welcome to [markdown previewer](https://quote.jpdiaz.dev), a simple random quote
 Here's a closer look at the tech stack:
 
 - Front-End: React.js, Vite.js, Tailwind CSS
-- API: [Marked](https://www.npmjs.com/package/marked)
+- library: [React Markdown Preview](https://www.npmjs.com/package/@uiw/react-markdown-preview)
 - Deployment: Vercel
 
 ## Dependencies:
 
-For this project you need to install the Marked package. You can install it using npm or yarn.
+For this project you need to install the [React Markdown Preview](https://www.npmjs.com/package/@uiw/react-markdown-preview) package. You can install it using npm or yarn. or you can use another markdown parser like [Marked](https://www.npmjs.com/package/marked).
 
-Markdown previewer uses the Marked package to parse markdown syntax into HTML.
+However, this Markdown previewer uses the [React Markdown Preview](https://www.npmjs.com/package/@uiw/react-markdown-preview) package to parse markdown syntax into HTML.
 
-### Marked CLI Installation
+### NPM Installation
+
+```bash
+npm i @uiw/react-markdown-preview
+```
+
+### Work Around...
+
+You could also use the [Marked](https://www.npmjs.com/package/marked) CLI Installation:
 
 ```bash
 npm install marked
@@ -94,12 +102,13 @@ We hope you enjoy using this project!
 
 Resources list that I find helpful and would like to give credit to.
 
-- [Marked Documentation](https://marked.js.org/)
-- [npm Marked](https://www.npmjs.com/package/marked)
 - [How to Build a Markdown Previewer with React.js](https://www.freecodecamp.org/news/build-a-markdown-previewer-with-react-js/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- [React Markdown Preview](https://www.npmjs.com/package/@uiw/react-markdown-preview)
+- [Marked](https://marked.js.org/)
+- [Marked CLI](https://www.npmjs.com/package/marked)
+- [React](https://reactjs.org/)
 - [Vite.js](https://vitejs.dev/)
-- [React.js](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [Vercel](https://vercel.com/)
 
 <p align="right">(<a href="#top">👆 Top 👆</a>)</p>
