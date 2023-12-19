@@ -103,6 +103,7 @@ We hope you enjoy using this project!
 Resources list that I find helpful and would like to give credit to.
 
 - [How to Build a Markdown Previewer with React.js](https://www.freecodecamp.org/news/build-a-markdown-previewer-with-react-js/)
+- [Tutorial: Render Markdown React Component](hthttps://www.youtube.com/watch?v=DXFc8MNUZQM)
 - [React Markdown Preview](https://www.npmjs.com/package/@uiw/react-markdown-preview)
 - [Marked](https://marked.js.org/)
 - [Marked CLI](https://www.npmjs.com/package/marked)
