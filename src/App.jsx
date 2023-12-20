@@ -30,11 +30,7 @@ const JuanDiaz = {
 };
 \`\`\`
 
-***
-
 ## Basic Syntax
-
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
 
 ### Heading
 
@@ -89,17 +85,12 @@ Juan's: [Github](https://github.com/JuanPabloDiaz) & [Linkedin](https://www.link
 
 ### Image
 
-![](https://www.markdownguide.org/assets/images/dev.png)
-![](https://avatars.githubusercontent.com/u/25883220?v=4)
+![juan dev](https://github.com/JuanPabloDiaz/markdownPreviewer/blob/main/src/assets/image/dev.png?raw=true)
 
 ### Image with Link
 
 [![alt text](https://img.shields.io/badge/@1diazdev-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/1diazdev/)
 [![Twitter](https://img.shields.io/badge/@1diazdev-1D9BF0.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.twitter.com/1diazdev)
-
-<a href="https://github.com/JuanPabloDiaz?tab=repositories">
-<img src="https://avatars.githubusercontent.com/u/25883220?v=4"  width="200px" alt="Logo">
-</a>
 
 ### Horizontal Rule
 
@@ -131,7 +122,7 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 npm i @uiw/react-markdown-preview
 \`\`\`
 
-### Footnote
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
 Here's a sentence with a footnote. [^1]
 
@@ -141,7 +132,7 @@ Here's a sentence with a footnote. [^1]
 
 ### My Great Heading {#custom-id}
 
-### Definition List
+### [Definition list](https://github.com/markdown-it/markdown-it-deflist)
 
 term
 : definition
@@ -155,79 +146,7 @@ term
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-
-### Emoji
-
-That is so funny! :joy:
-
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
-
-### Highlight
-
-I need to highlight these ==very important words==.
-
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^
-
-***
-
----
-
-### [<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-[^second]: Footnote text.
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::`;
+`;
 
 function App() {
   const [markdown, setMarkdown] = useState(defaultMarkdown);
