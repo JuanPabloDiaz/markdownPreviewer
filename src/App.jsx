@@ -32,81 +32,151 @@ const JuanDiaz = {
 
 ***
 
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+## Basic Syntax
+
+These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
+
+### Heading
+
+# h1
+## h2
+### h3
+
+### Text Decoration
 
 **bold text**, *italic text*, ~~Strikethrough~~
 
-## Blockquotes
-
+### Blockquote
 
 > Blockquotes can also be nested...
 >> ...by using additional greater-than signs right next to each other...
 > > > ...or with spaces between arrows.
 
+### Ordered List
 
-## Lists
+1. First item
+2. Second item
+3. Third item
 
-Unordered
+### Unordered List
+
 + Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
+  - Item
+    * Sub-item
 + Very easy!
 
-Ordered
+### Mixed List
 
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
+1. First item
+   - Sub-item
+      * Sub-sub-item
+2. Second item
+   - Sub-item
 
+### Code
 
-1. You can use sequential numbers...
-1. ...or keep all the numbers as 1.
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-## Code
+\`code\`
 
     // Some comments
     line 1 of code
     line 2 of code
 
-\`\`\`bash
-npm i @uiw/react-markdown-preview
-\`\`\`
+### Link
 
-## Tables
+[Markdown Guide](https://www.markdownguide.org)
 
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+Juan's: [Github](https://github.com/JuanPabloDiaz) & [Linkedin](https://www.linkedin.com/in/1diazdev/)
 
-## Links
+### Image
 
-[Juan's Github](https://github.com/JuanPabloDiaz)
+![](https://www.markdownguide.org/assets/images/dev.png)
+![](https://avatars.githubusercontent.com/u/25883220?v=4)
 
-[Juan's Linkedin](https://www.linkedin.com/in/1diazdev/)
+### Image with Link
 
-## Images
-
-[![](https://img.shields.io/badge/@1diazdev-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/1diazdev/)
-[![](https://img.shields.io/badge/@1diazdev-1D9BF0.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.twitter.com/1diazdev)
-[![](https://img.shields.io/badge/Email-fff?style=for-the-badge&logo=Mail.Ru&logoColor=06B6D4)](mailto:juan.diaz93@hotmail.com)
+[![alt text](https://img.shields.io/badge/@1diazdev-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/1diazdev/)
+[![Twitter](https://img.shields.io/badge/@1diazdev-1D9BF0.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.twitter.com/1diazdev)
 
 <a href="https://github.com/JuanPabloDiaz?tab=repositories">
 <img src="https://avatars.githubusercontent.com/u/25883220?v=4"  width="200px" alt="Logo">
 </a>
+
+### Horizontal Rule
+
+---
+
+## Extended Syntax
+
+These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
+
+### Table
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+### Fenced Code Block
+
+\`\`\`
+{
+  "firstName": "Juan",
+  "lastName": "Diaz",
+  "role": "Front End Developer",
+  "age": 30,
+}
+\`\`\`
+
+\`\`\`bash
+npm i @uiw/react-markdown-preview
+\`\`\`
+
+### Footnote
+
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+### Heading ID
+
+### My Great Heading {#custom-id}
+
+### Definition List
+
+term
+: definition
+
+### Strikethrough
+
+~~The world is flat.~~
+
+### Task List
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+### Emoji
+
+That is so funny! :joy:
+
+(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
+
+### Highlight
+
+I need to highlight these ==very important words==.
+
+### Subscript
+
+H~2~O
+
+### Superscript
+
+X^2^
+
+***
+
+---
 
 ### [<ins>](https://github.com/markdown-it/markdown-it-ins)
 
