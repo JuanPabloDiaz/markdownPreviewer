@@ -165,12 +165,13 @@ function App() {
     <>
       <div className="w-screen h-screen flex justify-center items-center">
         <h1 className="fixed top-5 text-3xl font-bold">Markdown Previewer</h1>
-        <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black p-2">
+        {/* <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black"> */}
+        <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6">
           <div className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-2/5 p-1 m-2 border-2 border-black rounded-lg shadow shadow-violet-950 shadow-lg">
             <h1 className="text-md md:text-2xl">Editor</h1>
             <textarea
               id="editor"
-              className="w-full h-full border-t-2 p-1 custom-scrollbar"
+              className="w-full h-full p-1 custom-scrollbar"
               placeholder="Enter markdown here"
               onChange={(e) => setMarkdown(e.target.value)}
               value={markdown}
@@ -178,9 +179,9 @@ function App() {
           </div>
           <div
             id="preview"
-            className="custom-scrollbar flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-3/5 p-1 overflow-auto"
+            className="custom-scrollbar flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-3/5 px-1 m-2 overflow-auto rounded-lg shadow-lg shadow-black"
           >
-            <h1 className="fixed flex justify-start items-end top-20 text-md md:text-2xl bg-white w-full h-10">
+            <h1 className="fixed flex justify-start items-end text-md md:text-2xl bg-white h-10 w-6/12 z-50">
               Previewer
             </h1>
             <div className="w-full h-full px-5 pt-5">
