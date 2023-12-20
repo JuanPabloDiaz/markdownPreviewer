@@ -14,12 +14,12 @@ Type your Markdown in the Editor!
 
 \`\`\`javascript
 const JuanDiaz = {
-  Root: "Bogota" | "Colombia",
+  Root: "Bogota | Colombia",
   code: [Javascript, React, Astro, Vue, HTML, CSS Tailwind, Python, Java, C#],
   tools: [VS-Code, Copilot],
   architecture: ["microservices", "event-driven", "design system pattern"],
   techCommunities: {
-    Web: Platzi, FreeCodeCamp.
+    Web: Platzi, FreeCodeCamp
   },
   #NeverStopLearning : true,
   @1diazDev: {
@@ -194,12 +194,23 @@ function App() {
             <h1 className="fixed flex justify-start items-end top-20 text-md md:text-2xl bg-white w-full h-10">
               Previewer
             </h1>
-            <div className="w-full h-full p-1">
+            <div className="w-full h-full px-5 pt-5">
               <MarkdownPreview
                 source={markdown}
+                // Set the default color mode for the rendered HTML:
                 wrapperElement={{
                   "data-color-mode": "light",
                 }}
+                // Disable header links:
+                // rehypeRewrite={(node, index, parent) => {
+                //   if (
+                //     node.tagName === "a" &&
+                //     parent &&
+                //     /^h(1|2|3|4|5|6)/.test(parent.tagName)
+                //   ) {
+                //     parent.children = parent.children.slice(1);
+                //   }
+                // }}
               />
             </div>
           </div>
