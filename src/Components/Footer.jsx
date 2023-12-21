@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-end fixed sm:bottom-6 bottom-2 w-5/6 gap-2">
+      <div className="hidden sm:flex justify-end fixed sm:bottom-6 bottom-2 w-5/6 gap-2">
         <p className="text-sm sm:text-md md:text-lg font-normal text-[#5f5f5f]">
           Developed by:
         </p>

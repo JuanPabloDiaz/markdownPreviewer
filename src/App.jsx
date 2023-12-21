@@ -149,28 +149,13 @@ term
 `;
 
 function App() {
-  const [markdown, setMarkdown] = useState(defaultMarkdown); // Markdown state
-
-  const [isScreenTall, setIsScreenTall] = useState(window.innerHeight > 500); // To hide the footer on small screens
+  const [markdown, setMarkdown] = useState(defaultMarkdown);
 
   // Prevents scrolling
-  // & To hide the footer on small screens
   useEffect(() => {
-    const handleResize = () => {
-      setIsScreenTall(window.innerHeight > 300);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Disable scrolling on the page
     document.body.style.overflow = "hidden";
-
-    // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener("resize", handleResize);
-
-      // Re-enable scrolling when the component unmounts
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "unset";
     };
   }, []);
 
@@ -179,7 +164,7 @@ function App() {
   return (
     <>
       <div className="w-screen h-screen flex justify-center items-center">
-        <h1 className="fixed top-2 sm:top-5 text-xl sm:text-3xl font-bold">
+        <h1 className="fixed top-3 sm:top-5 text-2xl sm:text-3xl font-bold">
           Markdown Previewer
         </h1>
         {/* <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black"> */}
@@ -222,7 +207,7 @@ function App() {
             </div>
           </div>
         </div>
-        {isScreenTall && <Footer />}
+        <Footer />
       </div>
     </>
   );
