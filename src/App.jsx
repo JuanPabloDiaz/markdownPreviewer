@@ -162,9 +162,15 @@ function App() {
 
     window.addEventListener("resize", handleResize);
 
+    // Disable scrolling on the page
+    document.body.style.overflow = "hidden";
+
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
+
+      // Re-enable scrolling when the component unmounts
+      document.body.style.overflow = "auto";
     };
   }, []);
 
