@@ -157,7 +157,7 @@ function App() {
   // & To hide the footer on small screens
   useEffect(() => {
     const handleResize = () => {
-      setIsScreenTall(window.innerHeight > 350);
+      setIsScreenTall(window.innerHeight > 300);
     };
 
     window.addEventListener("resize", handleResize);
