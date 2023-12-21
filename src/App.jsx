@@ -149,13 +149,22 @@ term
 `;
 
 function App() {
-  const [markdown, setMarkdown] = useState(defaultMarkdown);
+  const [markdown, setMarkdown] = useState(defaultMarkdown); // Markdown state
 
-  // Prevents scrolling on the body when the modal is open
+  const [isScreenTall, setIsScreenTall] = useState(window.innerHeight > 500); // To hide the footer on small screens
+
+  // Prevents scrolling
+  // & To hide the footer on small screens
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    const handleResize = () => {
+      setIsScreenTall(window.innerHeight > 500);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
     return () => {
-      document.body.style.overflow = "unset";
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -164,7 +173,9 @@ function App() {
   return (
     <>
       <div className="w-screen h-screen flex justify-center items-center">
-        <h1 className="fixed top-5 text-3xl font-bold">Markdown Previewer</h1>
+        <h1 className="fixed top-2 sm:top-5 text-xl sm:text-3xl font-bold">
+          Markdown Previewer
+        </h1>
         {/* <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black"> */}
         <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6">
           <div className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-2/5 p-1 m-2 border-2 border-black rounded-lg shadow shadow-violet-950 shadow-lg">
@@ -181,7 +192,7 @@ function App() {
             id="preview"
             className="custom-scrollbar flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-3/5 px-1 m-2 overflow-auto rounded-lg shadow-lg shadow-black"
           >
-            <h1 className="fixed flex justify-start items-end text-md md:text-2xl bg-white h-10 w-6/12 z-50">
+            <h1 className="fixed md:flex hidden justify-start items-end text-md md:text-2xl bg-white h-6 sm:h-8 md:h-10 w-6/12 z-50">
               Previewer
             </h1>
             <div className="w-full h-full px-5 pt-5">
@@ -205,7 +216,7 @@ function App() {
             </div>
           </div>
         </div>
-        <Footer />
+        {isScreenTall && <Footer />}
       </div>
     </>
   );
