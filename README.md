@@ -97,7 +97,7 @@ I welcome contributions to the [markdown previewer](https://markdown.jpdiaz.dev)
 
 [markdown previewer](https://markdown.jpdiaz.dev) is licensed under the MIT License.
 
-We hope you enjoy using this project!
+I hope you enjoy using this project!
 
 <!-- OTHER PROJECTS -->
 
