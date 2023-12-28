@@ -17,15 +17,15 @@ This project was built as part of the **[freeCodeCamp Front End Libraries Certif
 
 ### Desktop View 🖥️
 
-<img src="./src/assets/image/desktop.png" width="" />
+<img src="./src/assets/images/desktop.png" width="" />
 
 ### iPad view📱
 
-<img src="./src/assets/image/ipad.png" width="250" />
+<img src="./src/assets/images/ipad.png" width="250" />
 
 ### Mobile view📱
 
-<img src="./src/assets/image/phone.png" width="250" />
+<img src="./src/assets/images/phone.png" width="250" />
 
 ## Features:
 
