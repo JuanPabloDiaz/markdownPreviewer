@@ -85,7 +85,7 @@ Juan's: [Github](https://github.com/JuanPabloDiaz) & [Linkedin](https://www.link
 
 ### Image
 
-![juan dev](https://github.com/JuanPabloDiaz/markdownPreviewer/blob/main/src/assets/image/dev.png?raw=true)
+![juan dev](https://github.com/JuanPabloDiaz/markdownPreviewer/blob/main/src/assets/images/dev.png?raw=true)
 
 ### Image with Link
 
