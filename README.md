@@ -19,11 +19,11 @@ This project was built as part of the **[freeCodeCamp Front End Libraries Certif
 
 <img src="./src/assets/images/desktop.png" width="" />
 
-### iPad view📱
+### iPad view 📱
 
-<img src="./src/assets/images/ipad.png" width="250" />
+<img src="./src/assets/images/ipad.png" width="300" />
 
-### Mobile view📱
+### Mobile view 📱
 
 <img src="./src/assets/images/phone.png" width="250" />
 
@@ -32,6 +32,11 @@ This project was built as part of the **[freeCodeCamp Front End Libraries Certif
 - Responsive design: [markdown previewer](https://markdown.jpdiaz.dev) adapts to any screen size, ensuring a consistent and enjoyable experience for all users.
 - Sleek and modern UI: Tailwind CSS provides a beautiful and intuitive user interface.
 - Efficient and performant: Vite.js ensures fast loading times and a smooth experience.
+- Key benefits of using a Markdown previewer:
+  - Instant Visualization between Markdown and HTML syntax.
+  - A great way to learn Markdown
+  - Beginner-friendly
+  - Focus on Content
 
 ### Built With 🔑
 
