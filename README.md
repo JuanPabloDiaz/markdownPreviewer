@@ -6,7 +6,7 @@ This simple project is a responsive web application that allows users to write a
 
 ## Description 💡
 
-This project was built as part of the [freeCodeCamp](https://www.freecodecamp.org/) Front End Libraries Certification. The goal was to build a markdown previewer that meets the following user stories:
+This project was built as part of the **[freeCodeCamp Front End Libraries Certification](https://www.freecodecamp.org/certification/1diazdev/front-end-development-libraries)**. The goal was to build a Markdown Previewer with React.
 
 <div align="center">
 
