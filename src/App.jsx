@@ -163,17 +163,17 @@ function App() {
 
   return (
     <>
-      <div className="w-screen h-screen flex justify-center items-center">
-        <h1 className="fixed top-3 sm:top-5 text-2xl sm:text-3xl font-bold">
+      <div className="flex h-screen w-screen items-center justify-center">
+        <h1 className="fixed top-3 text-2xl font-bold sm:top-5 sm:text-3xl">
           Markdown Previewer
         </h1>
         {/* <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6 rounded-lg shadow-lg shadow-black"> */}
-        <div className="flex flex-col-reverse md:flex-row gap-1 w-11/12 h-5/6">
-          <div className="flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-2/5 p-1 m-2 border-2 border-black rounded-lg shadow shadow-violet-950 shadow-lg">
+        <div className="flex h-5/6 w-11/12 flex-col-reverse gap-1 md:flex-row">
+          <div className="m-2 flex h-96 flex-col items-start justify-start rounded-lg border-2 border-black p-1 shadow shadow-lg shadow-violet-950 sm:w-full md:h-auto md:w-2/5">
             <h1 className="text-md md:text-2xl">Editor</h1>
             <textarea
               id="editor"
-              className="w-full h-full p-1 custom-scrollbar"
+              className="custom-scrollbar h-full w-full p-1"
               placeholder="Enter markdown here"
               onChange={(e) => setMarkdown(e.target.value)}
               value={markdown}
@@ -181,12 +181,12 @@ function App() {
           </div>
           <div
             id="preview"
-            className="custom-scrollbar flex flex-col justify-start items-start h-96 md:h-auto sm:w-full md:w-3/5 px-1 m-2 overflow-auto rounded-lg shadow-lg shadow-black"
+            className="custom-scrollbar m-2 flex h-96 flex-col items-start justify-start overflow-auto rounded-lg px-1 shadow-lg shadow-black sm:w-full md:h-auto md:w-3/5"
           >
-            <h1 className="fixed md:flex hidden justify-start items-end text-md md:text-2xl bg-white h-6 sm:h-8 md:h-10 w-6/12 z-50">
+            <h1 className="text-md fixed z-50 hidden h-6 w-6/12 items-end justify-start bg-white sm:h-8 md:flex md:h-10 md:text-2xl">
               Previewer
             </h1>
-            <div className="w-full h-full px-5 pt-5">
+            <div className="h-full w-full px-5 pt-5">
               <MarkdownPreview
                 source={markdown}
                 // Set the default color mode for the rendered HTML:
