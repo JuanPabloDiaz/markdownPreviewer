@@ -11,7 +11,7 @@ This project was built as part of the **[freeCodeCamp Front End Libraries Certif
 <div align="center">
 
 [![markdownPreviewer](https://img.shields.io/badge/View%20Demo-000?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://markdown.jpdiaz.dev/)
-[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://pr.new/github.com/JuanPabloDiaz/markdownPreviewer)
+[![repo](https://img.shields.io/badge/View%20Code-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://stackblitz.com/github.com/JuanPabloDiaz/markdownPreviewer)
 
 </div>
 
