@@ -23,7 +23,7 @@ const JuanDiaz = {
   },
   #NeverStopLearning : true,
   @1diazDev: {
-    Twitter: https://twitter.com/1diazdev,
+    Twitter: https://twitter.com/JuanDiaz_427,
     LinkedIn: https://www.linkedin.com/in/1diazdev/,
     GitHub: https://github.com/JuanPabloDiaz
   },
@@ -90,7 +90,7 @@ Juan's: [Github](https://github.com/JuanPabloDiaz) & [Linkedin](https://www.link
 ### Image with Link
 
 [![alt text](https://img.shields.io/badge/@1diazdev-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/1diazdev/)
-[![Twitter](https://img.shields.io/badge/@1diazdev-1D9BF0.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.twitter.com/1diazdev)
+[![Twitter](https://img.shields.io/badge/@1diazdev-1D9BF0.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.twitter.com/JuanDiaz_427)
 
 ### Horizontal Rule
 
